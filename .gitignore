@@ -1,0 +1,61 @@
+# --- Positron & VS Code config ---
+.positron/
+.vscode/
+*.code-workspace
+
+# --- R and RStudio / Positron temp files ---
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+*.Rproj
+rsconnect/
+renv/library/
+renv/python/
+renv/staging/
+
+# --- Python & Virtual Environments ---
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+
+# --- LaTeX ---
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.nav
+*.snm
+*.vrb
+*.bbl
+*.blg
+*.bcf
+*.run.xml
+*.idx
+*.ilg
+*.ind
+*.lol
+*.thm
+*.xdv
+*.dvi
+*.ps
+
+# --- OS temp files ---
+.DS_Store
+Thumbs.db
+
+# --- other files ---
+guidelines.tex
+Рубрик Teams.csv
+*.wav
+!original.wav
+!record.wav

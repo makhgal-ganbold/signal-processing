@@ -1,0 +1,1376 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.11.9">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Г.Махгал">
+
+<title>Аудио дохио боловсруулалт</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="Signal Processing_files/libs/clipboard/clipboard.min.js"></script>
+<script src="Signal Processing_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="Signal Processing_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="Signal Processing_files/libs/quarto-html/scrollable-regions/scrollable-regions.js" type="module"></script>
+<script src="Signal Processing_files/libs/quarto-html/popper.min.js"></script>
+<script src="Signal Processing_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="Signal Processing_files/libs/quarto-html/anchor.min.js"></script>
+<link href="Signal Processing_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="Signal Processing_files/libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="Signal Processing_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="Signal Processing_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="Signal Processing_files/libs/bootstrap/bootstrap-52e4e82bbcca6f6d3cb3ec4385ac909d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Skip to main content</a>
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+  <nav id="TOC" role="doc-toc" aria-labelledby="toc-title" class="toc-active">
+    <h2 id="toc-title">Агуулга</h2>
+   
+  <ul>
+  <li><a href="#бичлэг-хийх" id="toc-бичлэг-хийх" class="nav-link active" data-scroll-target="#бичлэг-хийх"><span class="header-section-number">1</span> Бичлэг хийх</a></li>
+  <li><a href="#цэвэр-шуугиан-ба-шуугиан-болон-яриа-холилдсон-хэсгийг-салгах" id="toc-цэвэр-шуугиан-ба-шуугиан-болон-яриа-холилдсон-хэсгийг-салгах" class="nav-link" data-scroll-target="#цэвэр-шуугиан-ба-шуугиан-болон-яриа-холилдсон-хэсгийг-салгах"><span class="header-section-number">2</span> Цэвэр шуугиан ба шуугиан болон яриа холилдсон хэсгийг салгах</a>
+  <ul class="collapse">
+  <li><a href="#sample-rate-ба-bit-depth-тодорхойлох" id="toc-sample-rate-ба-bit-depth-тодорхойлох" class="nav-link" data-scroll-target="#sample-rate-ба-bit-depth-тодорхойлох"><span class="header-section-number">2.1</span> Sample rate ба Bit Depth тодорхойлох</a></li>
+  <li><a href="#waveform-дүрслэх" id="toc-waveform-дүрслэх" class="nav-link" data-scroll-target="#waveform-дүрслэх"><span class="header-section-number">2.2</span> Waveform дүрслэх</a></li>
+  <li><a href="#noise-ба-speech-хэсгүүдийг-салгах" id="toc-noise-ба-speech-хэсгүүдийг-салгах" class="nav-link" data-scroll-target="#noise-ба-speech-хэсгүүдийг-салгах"><span class="header-section-number">2.3</span> Noise ба Speech хэсгүүдийг салгах</a>
+  <ul class="collapse">
+  <li><a href="#noise-хэсгийг-салгах" id="toc-noise-хэсгийг-салгах" class="nav-link" data-scroll-target="#noise-хэсгийг-салгах"><span class="header-section-number">2.3.1</span> Noise хэсгийг салгах</a></li>
+  <li><a href="#speech-хэсгийг-салгах" id="toc-speech-хэсгийг-салгах" class="nav-link" data-scroll-target="#speech-хэсгийг-салгах"><span class="header-section-number">2.3.2</span> Speech хэсгийг салгах</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#шуугианы-статистик-шинжилгээ" id="toc-шуугианы-статистик-шинжилгээ" class="nav-link" data-scroll-target="#шуугианы-статистик-шинжилгээ"><span class="header-section-number">3</span> Шуугианы статистик шинжилгээ</a>
+  <ul class="collapse">
+  <li><a href="#тайлбарлагч-статистикуудыг-тооцоолох" id="toc-тайлбарлагч-статистикуудыг-тооцоолох" class="nav-link" data-scroll-target="#тайлбарлагч-статистикуудыг-тооцоолох"><span class="header-section-number">3.1</span> Тайлбарлагч статистикуудыг тооцоолох</a></li>
+  <li><a href="#тархалтыг-шинжлэх" id="toc-тархалтыг-шинжлэх" class="nav-link" data-scroll-target="#тархалтыг-шинжлэх"><span class="header-section-number">3.2</span> Тархалтыг шинжлэх</a>
+  <ul class="collapse">
+  <li><a href="#экстрем-утга-илрүүлэх" id="toc-экстрем-утга-илрүүлэх" class="nav-link" data-scroll-target="#экстрем-утга-илрүүлэх"><span class="header-section-number">3.2.1</span> Экстрем утга илрүүлэх</a></li>
+  <li><a href="#хэвийн-тархалтын-тохирцын-тухай-таамаглал-шалгах" id="toc-хэвийн-тархалтын-тохирцын-тухай-таамаглал-шалгах" class="nav-link" data-scroll-target="#хэвийн-тархалтын-тохирцын-тухай-таамаглал-шалгах"><span class="header-section-number">3.2.2</span> Хэвийн тархалтын тохирцын тухай таамаглал шалгах</a></li>
+  </ul></li>
+  <li><a href="#шуугианы-дунджийн-тухай-таамаглал-шалгах" id="toc-шуугианы-дунджийн-тухай-таамаглал-шалгах" class="nav-link" data-scroll-target="#шуугианы-дунджийн-тухай-таамаглал-шалгах"><span class="header-section-number">3.3</span> Шуугианы дунджийн тухай таамаглал шалгах</a></li>
+  <li><a href="#шуугианы-автокорреляцийг-шинжлэх" id="toc-шуугианы-автокорреляцийг-шинжлэх" class="nav-link" data-scroll-target="#шуугианы-автокорреляцийг-шинжлэх"><span class="header-section-number">3.4</span> Шуугианы автокорреляцийг шинжлэх</a></li>
+  </ul></li>
+  <li><a href="#шуугиан-болон-яриа-холилдсон-хэсгийг-эх-дохиотой-хугацааны-хувьд-тааруулах" id="toc-шуугиан-болон-яриа-холилдсон-хэсгийг-эх-дохиотой-хугацааны-хувьд-тааруулах" class="nav-link" data-scroll-target="#шуугиан-болон-яриа-холилдсон-хэсгийг-эх-дохиотой-хугацааны-хувьд-тааруулах"><span class="header-section-number">4</span> Шуугиан болон яриа холилдсон хэсгийг эх дохиотой хугацааны хувьд тааруулах</a>
+  <ul class="collapse">
+  <li><a href="#sampling-rate-буюу-секунд-тутамд-авах-түүврийн-хэмжээг-ижил-болгох" id="toc-sampling-rate-буюу-секунд-тутамд-авах-түүврийн-хэмжээг-ижил-болгох" class="nav-link" data-scroll-target="#sampling-rate-буюу-секунд-тутамд-авах-түүврийн-хэмжээг-ижил-болгох"><span class="header-section-number">4.1</span> Sampling rate буюу секунд тутамд авах түүврийн хэмжээг ижил болгох</a></li>
+  <li><a href="#хоёр-дохиог-хугацааны-хувьд-давхцуулах" id="toc-хоёр-дохиог-хугацааны-хувьд-давхцуулах" class="nav-link" data-scroll-target="#хоёр-дохиог-хугацааны-хувьд-давхцуулах"><span class="header-section-number">4.2</span> Хоёр дохиог хугацааны хувьд давхцуулах</a></li>
+  </ul></li>
+  <li><a href="#дохио-ба-шуугианы-чадлын-харьцааг-олох" id="toc-дохио-ба-шуугианы-чадлын-харьцааг-олох" class="nav-link" data-scroll-target="#дохио-ба-шуугианы-чадлын-харьцааг-олох"><span class="header-section-number">5</span> Дохио ба шуугианы чадлын харьцааг олох</a></li>
+  <li><a href="#шуугианы-давтамжийн-домэйн-дээрх-шинжилгээ-ба-филтер-сонголт" id="toc-шуугианы-давтамжийн-домэйн-дээрх-шинжилгээ-ба-филтер-сонголт" class="nav-link" data-scroll-target="#шуугианы-давтамжийн-домэйн-дээрх-шинжилгээ-ба-филтер-сонголт"><span class="header-section-number">6</span> Шуугианы давтамжийн домэйн дээрх шинжилгээ ба филтер сонголт</a></li>
+  <li><a href="#филтер-сонгож-ажиллуулах-ба-шүүсэн-дохиог-шинжлэх" id="toc-филтер-сонгож-ажиллуулах-ба-шүүсэн-дохиог-шинжлэх" class="nav-link" data-scroll-target="#филтер-сонгож-ажиллуулах-ба-шүүсэн-дохиог-шинжлэх"><span class="header-section-number">7</span> Филтер сонгож ажиллуулах ба шүүсэн дохиог шинжлэх</a>
+  <ul class="collapse">
+  <li><a href="#шүүсэн-ба-шүүгээгүй-дохиог-харьцуулах" id="toc-шүүсэн-ба-шүүгээгүй-дохиог-харьцуулах" class="nav-link" data-scroll-target="#шүүсэн-ба-шүүгээгүй-дохиог-харьцуулах"><span class="header-section-number">7.1</span> Шүүсэн ба шүүгээгүй дохиог харьцуулах</a></li>
+  <li><a href="#шүүсэн-дохиог-эх-дохиотой-харьцуулах" id="toc-шүүсэн-дохиог-эх-дохиотой-харьцуулах" class="nav-link" data-scroll-target="#шүүсэн-дохиог-эх-дохиотой-харьцуулах"><span class="header-section-number">7.2</span> Шүүсэн дохиог эх дохиотой харьцуулах</a></li>
+  </ul></li>
+  <li><a href="#дүгнэлт" id="toc-дүгнэлт" class="nav-link" data-scroll-target="#дүгнэлт">Дүгнэлт</a></li>
+  <li><a href="#ашигласан-материал" id="toc-ашигласан-материал" class="nav-link" data-scroll-target="#ашигласан-материал">Ашигласан материал</a></li>
+  </ul>
+</nav>
+</div>
+<main class="content" id="quarto-document-content" tabindex="-1">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Аудио дохио боловсруулалт</h1>
+<p class="subtitle lead">Дохио боловсруулалт дахь магадлал ба статистикийн зарим хэрэглээ</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Зохиогч</div>
+    <div class="quarto-title-meta-contents">
+             <p>Г.Махгал </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Нийтлэгдсэн</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">2026 оны 11-р сарын 13</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>Энэхүү документ нь <a href="https://www.magadlal.com/course/9/project">www.magadlal.com/course/9/project</a> удирдамжийн дагуу гүйцэтгэх төслийн даалгавруудыг хэрхэн хийх тухай нэмэлт заавар ба <code>Quarto Document</code> файлын жишээ болно.</p>
+<p>Оюутнууд компьютерийн програмыг Python хэлээр бичиж, ажиллуулах ба иймд түүнээс өөр програмчлалын хэл, тухайлбал R хэл ашиглана. R хэлээр бичсэн кодыг R <span class="citation" data-cites="R"><a href="#ref-R" role="doc-biblioref">[1]</a></span> програмын 4.6.2 хувилбар дээр ажиллуулсан.</p>
+<p>R дээр аудио өгөгдөлтэй ажиллахад <code>tuneR</code> болон <code>seewave</code> гэдэг хоёр багц ашигладаг <span class="citation" data-cites="reintech2023"><a href="#ref-reintech2023" role="doc-biblioref">[2]</a></span> ба энд эхлээд <code>tuneR</code> багцыг ашиглах бөгөөд шаардлага гарвал нөгөө багцыг нэмэлтээр ашиглана. Тус багцыг дараах тушаалаар R програмд суулгана.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"tuneR"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<section id="бичлэг-хийх" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Бичлэг хийх</h1>
+<p>Энэхүү даалгаврын заавар дахь жишээ файл болох <a href="https://www.magadlal.com/d/datasets/original.wav">www.magadlal.com/d/datasets/original.wav</a> файлыг гар утас дээр тоглуулсанаа лэптопын микрофоноор бичиж аваад <code>record.wav</code> нэртэй файлд WAV форматаар хадгалав. Бичлэг хийж улмаар бичлэг дэх хэрэгцээгүй хэсгийг тасдаж хаяхад Audacity <span class="citation" data-cites="audacity"><a href="#ref-audacity" role="doc-biblioref">[3]</a></span> програм ашиглав.</p>
+</section>
+<section id="цэвэр-шуугиан-ба-шуугиан-болон-яриа-холилдсон-хэсгийг-салгах" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Цэвэр шуугиан ба шуугиан болон яриа холилдсон хэсгийг салгах</h1>
+<p>Эхлээд аудио бичлэг агуулж буй <code>record.wav</code> файлыг R програмд ачаална.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>record <span class="ot">&lt;-</span> tuneR<span class="sc">::</span><span class="fu">readWave</span>(<span class="st">"record.wav"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>Ачаалсан өгөгдлийг агуулах объектыг <code>record</code> гэж нэрлэв. <code>tuneR</code> багцын тусламжтай үүссэн энэхүү объект нь Wave гэдэг нэртэй S4 классын объект байна.</p>
+<section id="sample-rate-ба-bit-depth-тодорхойлох" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="sample-rate-ба-bit-depth-тодорхойлох"><span class="header-section-number">2.1</span> Sample rate ба Bit Depth тодорхойлох</h2>
+<p>Sample rate шинжийг <code>record</code> объектын <code>samp.rate</code> гэдэг аттрибут агуулна.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>record<span class="sc">@</span>samp.rate <span class="sc">|&gt;</span> <span class="fu">cat</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>44100</code></pre>
+</div>
+</div>
+<p>Энд програмын гаралтыг <code>[1]</code> шиг элементийн индексгүй хэвлэхийн тулд <code>cat()</code> функц нэмэлтээр ашигласан.</p>
+<p><code>record</code> нь S4 объект тул аттрибутыг нь дуудахдаа R хэлний <code>@</code> оператор ашиглана.</p>
+<p>Sample rate нь аудио бичлэгийн уртыг (секундээр) олох болон хоёр өөр sample rate бүхий өгөгдлийг зэрэгцүүлэн авч үзэх зэрэгт зайлшгүй хэрэгтэй.</p>
+<p>Бичлэгийн уртыг <span class="math display">\[\text{Length in seconds} = \frac{\text{Signal Length}}{\text{Sample Rate}}\]</span> томьёогоор олно.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>{</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  record<span class="sc">@</span>left <span class="sc">|&gt;</span> <span class="fu">length</span>() <span class="sc">/</span> record<span class="sc">@</span>samp.rate</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>} <span class="sc">|&gt;</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cat</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>10.41415</code></pre>
+</div>
+</div>
+<p>Энд <code>left</code> нь стерео бичлэгийн зүүн суваг юм. Жич: Бичлэг моно тул баруун суваг хоосон байна. Иймд зөвхөн зүүн сувгийг ашиглана. Ийнхүү зүүн суваг дахь дохионы уртыг <code>samp.rate</code> аттрибутын утгад хувааснаар бичлэгийн уртыг секундээр илэрхийлэх утга гарна. Бичлэгийн урт ойролцоогоор 10.4 секунд байна.</p>
+<p>Харин Bit Depth нь өгөгдөл агуулж буй объектын <code>bit</code> нэртэй элементэд агуулагдана.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>record<span class="sc">@</span>bit <span class="sc">|&gt;</span> <span class="fu">cat</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>16</code></pre>
+</div>
+</div>
+</section>
+<section id="waveform-дүрслэх" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="waveform-дүрслэх"><span class="header-section-number">2.2</span> Waveform дүрслэх</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>tuneR<span class="sc">::</span><span class="fu">plot</span>(record)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div id="fig-waveform" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-waveform-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="Signal-Processing_files/figure-html/fig-waveform-1.png" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-waveform-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Зураг&nbsp;1: Бичлэгийн waveform
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="noise-ба-speech-хэсгүүдийг-салгах" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="noise-ба-speech-хэсгүүдийг-салгах"><span class="header-section-number">2.3</span> Noise ба Speech хэсгүүдийг салгах</h2>
+<p>Эхлээд <code>noise</code> хэсгийг салгаж авна.</p>
+<section id="noise-хэсгийг-салгах" class="level3" data-number="2.3.1">
+<h3 data-number="2.3.1" class="anchored" data-anchor-id="noise-хэсгийг-салгах"><span class="header-section-number">2.3.1</span> Noise хэсгийг салгах</h3>
+<p>Noise хэсэг бичлэгийн эхний 3 секундыг хамарсан. Иймд <code>record</code> объектын эхний 3 секундын урттай хэсгийг салган авч <code>noise</code> гэж тусад нь хадгална.</p>
+<p>Эхлээд <code>noise</code> хэсгийн эхлэх ба дуусах цэгийг заана.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>start_sec <span class="ot">&lt;-</span> <span class="fl">0.0</span>  <span class="co"># noise эхлэх секунд</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>end_sec <span class="ot">&lt;-</span> <span class="fl">3.0</span>    <span class="co"># noise дуусах секунд</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>Одоо дээр заасан (секундээр илэрхийлэгдсэн) моментууд <code>record</code> түүврийн элементүүдийн чухам аль индексийг зааж буйг олно.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>start_sample <span class="ot">&lt;-</span> <span class="fu">max</span>(<span class="fu">round</span>(start_sec <span class="sc">*</span> record<span class="sc">@</span>samp.rate), <span class="dv">1</span>)</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>end_sample <span class="ot">&lt;-</span> <span class="fu">max</span>(<span class="fu">round</span>(end_sec <span class="sc">*</span> record<span class="sc">@</span>samp.rate), <span class="dv">1</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>Энд <code>max(#,1)</code> нь R объектын элементийн индекс нэгээс эхэлдэгтэй холбоотой.</p>
+<p><code>noise</code> хэсгийн эхлэл төгсгөл тодорхой болсон тул үүнийг <code>record</code> объектоос ялгаж авна.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>noise <span class="ot">&lt;-</span> record[start_sample<span class="sc">:</span>end_sample,]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>Эцэст нь <code>noise</code> объектыг <code>noise.wav</code> файлд хадгалав.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>tuneR<span class="sc">::</span><span class="fu">writeWave</span>(noise, <span class="st">"noise.wav"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</section>
+<section id="speech-хэсгийг-салгах" class="level3" data-number="2.3.2">
+<h3 data-number="2.3.2" class="anchored" data-anchor-id="speech-хэсгийг-салгах"><span class="header-section-number">2.3.2</span> Speech хэсгийг салгах</h3>
+<p>Энэ нь эхлэх ба дуусах секундыг заах болон объектын нэрээс бусдаар өмнөхтэй ижил юм.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>start_sec <span class="ot">&lt;-</span> <span class="fl">3.0</span>  <span class="co"># speech эхлэх секунд</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>end_sec <span class="ot">&lt;-</span> <span class="fl">9.0</span>    <span class="co"># speech дуусах секунд</span></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>start_sample <span class="ot">&lt;-</span> <span class="fu">max</span>(<span class="fu">round</span>(start_sec <span class="sc">*</span> record<span class="sc">@</span>samp.rate), <span class="dv">1</span>)</span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>end_sample <span class="ot">&lt;-</span> <span class="fu">max</span>(<span class="fu">round</span>(end_sec <span class="sc">*</span> record<span class="sc">@</span>samp.rate), <span class="dv">1</span>)</span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>speech <span class="ot">&lt;-</span> record[start_sample<span class="sc">:</span>end_sample,]   <span class="co"># Шинэ объектыг speech гэж нэрлэв.</span></span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>tuneR<span class="sc">::</span><span class="fu">writeWave</span>(speech, <span class="st">"speech.wav"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>Ийнхүү тус хэсгийг салгаж аваад <code>speech</code> гэдэг нэртэй объект болгов. Түүнчлэн үүнийг <code>speech.wav</code> файлд хадгалсан.</p>
+</section>
+</section>
+</section>
+<section id="шуугианы-статистик-шинжилгээ" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Шуугианы статистик шинжилгээ</h1>
+<section id="тайлбарлагч-статистикуудыг-тооцоолох" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="тайлбарлагч-статистикуудыг-тооцоолох"><span class="header-section-number">3.1</span> Тайлбарлагч статистикуудыг тооцоолох</h2>
+<p>Дундаж</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>noise<span class="sc">@</span>left <span class="sc">|&gt;</span> <span class="fu">mean</span>() <span class="sc">|&gt;</span> <span class="fu">cat</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>0.7320106</code></pre>
+</div>
+</div>
+<p>Дисперс буюу дундаж квадрат хазайлт</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>noise<span class="sc">@</span>left <span class="sc">|&gt;</span> <span class="fu">var</span>() <span class="sc">|&gt;</span> <span class="fu">cat</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>137677.8</code></pre>
+</div>
+</div>
+<p>Стандарт хазайлт</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>noise<span class="sc">@</span>left <span class="sc">|&gt;</span> <span class="fu">sd</span>() <span class="sc">|&gt;</span> <span class="fu">cat</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>371.0496</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>noise<span class="sc">@</span>left <span class="sc">|&gt;</span> <span class="fu">var</span>() <span class="sc">|&gt;</span> <span class="fu">sqrt</span>() <span class="sc">|&gt;</span> <span class="fu">cat</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>371.0496</code></pre>
+</div>
+</div>
+<p>Шуугианы дундаж 0.7320106 нь стандарт хазайлтын 371.0496025 утгатай харьцуулбал бага тоо юм. Энэ нь шуугианы дундаж тэгтэй тэнцүү гэж таамаглах үндэслэл болно.</p>
+</section>
+<section id="тархалтыг-шинжлэх" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="тархалтыг-шинжлэх"><span class="header-section-number">3.2</span> Тархалтыг шинжлэх</h2>
+<p>Шуугианы тархалтыг гистограммаар дүрслэв.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(noise<span class="sc">@</span>left, <span class="at">xlab =</span> <span class="st">"Шуугиан"</span>, <span class="at">ylab =</span> <span class="st">"Давтамж"</span>, <span class="at">main =</span> <span class="st">"Гистограмм"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div id="fig-histogram" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-histogram-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="Signal-Processing_files/figure-html/fig-histogram-1.png" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-histogram-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Зураг&nbsp;2: Шуугианы гистограмм
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Гистограммын хэлбэр нь шуугианыг хэвийн тархалттай гэж таамаглаж болохуйц харагдана.</p>
+<p>Улмаар өгөгдөл хэвийн тархалттай хэр нийцэж эсвэл гажиж буйг харахын тулд Q-Q диаграмм байгуулав.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="fu">qqnorm</span>(noise<span class="sc">@</span>left)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div id="fig-qqnorm" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-qqnorm-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="Signal-Processing_files/figure-html/fig-qqnorm-1.png" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-qqnorm-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Зураг&nbsp;3: Шуугиан ба хэвийн тархалтын Q-Q диаграмм
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Түүврийн элемент бүртэй харгалзах түүврийн квантил ба хэвийн тархалтаас олсон онолын квантил хоёроор тодорхойлогдох цэгүүд үндсэндээ нэг шулууны дагуу байрласан нь түүврийн тархалтыг хэвийн тархалттай тохирч буйг илтгэсэн явдал юм.</p>
+<section id="экстрем-утга-илрүүлэх" class="level3" data-number="3.2.1">
+<h3 data-number="3.2.1" class="anchored" data-anchor-id="экстрем-утга-илрүүлэх"><span class="header-section-number">3.2.1</span> Экстрем утга илрүүлэх</h3>
+<p>Экстрем буюу онцгой утга буй эсэхийг шалгахдаа хайрцган диаграмм ашиглав.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="fu">boxplot</span>(noise<span class="sc">@</span>left, <span class="at">horizontal =</span> <span class="cn">TRUE</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div id="fig-boxplot" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-boxplot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="Signal-Processing_files/figure-html/fig-boxplot-1.png" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-boxplot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Зураг&nbsp;4: Шуугианы хайрцган диаграмм
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Байгуулсан хайрцган диаграмм дээр цөөнгүй цэг дүрслэгдсэн нь онцгой утгууд төдий олон буйг илтгэсэн явдал юм. Иймд шуугианыг хэвийн тархалттай гэсэн таамаглалыг шалгах болон шуугианы дундаж тэгтэй тэнцүү гэсэн таамаглалыг ч шалгахдаа эдгээр онцгой утгуудыг харгалзан үзнэ.</p>
+</section>
+<section id="хэвийн-тархалтын-тохирцын-тухай-таамаглал-шалгах" class="level3" data-number="3.2.2">
+<h3 data-number="3.2.2" class="anchored" data-anchor-id="хэвийн-тархалтын-тохирцын-тухай-таамаглал-шалгах"><span class="header-section-number">3.2.2</span> Хэвийн тархалтын тохирцын тухай таамаглал шалгах</h3>
+<p>Хэвийн тархалттай гэсэн таамаглалыг Шафиро-Уилкийн шинжүүрээр шалгав.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">17</span>)             <span class="co"># Санамсаргүй түүврийг бэхлэх үүрэгтэй.</span></span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>noise<span class="sc">@</span>left <span class="sc">|&gt;</span></span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">sample</span>(<span class="at">size =</span> <span class="dv">5000</span>) <span class="sc">|&gt;</span> <span class="co"># Өгөгдлөөс 5000 элемент санамсаргүй түүвэрлэн авна.</span></span>
+<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">shapiro.test</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    Shapiro-Wilk normality test
+
+data:  sample(noise@left, size = 5000)
+W = 0.99947, p-value = 0.1732</code></pre>
+</div>
+</div>
+<p>Өгөгдлөөс 5000 элемент санамсаргүй түүвэрлэн авсан нь <code>shapiro.test()</code> функцийн шаардлагыг хангах зорилготой үйлдэл юм. Тус функц түүврийн хэмжээг хамгийн ихдээ 5000 байхыг шаарддаг.</p>
+<p>Таамаглал шалгалтын үр дүн болох p-value нь <span class="math inline">\(\alpha=0.05\)</span> ач холбогдлын түвшингээс их гарсан тул шуугианыг хэвийн тархалттай гэсэн тэг таамаглалыг үл няцаана.</p>
+</section>
+</section>
+<section id="шуугианы-дунджийн-тухай-таамаглал-шалгах" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="шуугианы-дунджийн-тухай-таамаглал-шалгах"><span class="header-section-number">3.3</span> Шуугианы дунджийн тухай таамаглал шалгах</h2>
+<p>Шуугианы математик дундаж тэгтэй тэнцүү гэсэн тэг таамаглалыг <span class="math inline">\(t\)</span> шинжүүрээр шалгав.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>noise<span class="sc">@</span>left <span class="sc">|&gt;</span> <span class="fu">t.test</span>(<span class="at">mu =</span> <span class="dv">0</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    One Sample t-test
+
+data:  noise@left
+t = 0.71757, df = 132299, p-value = 0.473
+alternative hypothesis: true mean is not equal to 0
+95 percent confidence interval:
+ -1.267410  2.731431
+sample estimates:
+mean of x 
+0.7320106 </code></pre>
+</div>
+</div>
+<p><span class="math inline">\(\text{p-value}\geq\alpha=0.05\)</span> нөхцөл үл биелэх тул тус ач холбогдлын түвшинд шуугианы дундаж тэгтэй тэнцүү гэсэн тэг таамаглалыг үл няцаана.</p>
+</section>
+<section id="шуугианы-автокорреляцийг-шинжлэх" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="шуугианы-автокорреляцийг-шинжлэх"><span class="header-section-number">3.4</span> Шуугианы автокорреляцийг шинжлэх</h2>
+<p>Автокорреляцийн коэффициент нь <span class="math inline">\((N_1,N_2,\ldots,N_n)\)</span> түүврийн <span class="math inline">\(N_i\)</span> ба <span class="math inline">\(N_{i-k}\)</span> гэсэн <span class="math inline">\(k\)</span> алхмын зайтайгаар дэс дараалсан элементүүдийн хоорондох хамаарлыг хэмждэг. Энд <span class="math inline">\(k\)</span> параметрийг автокорреляцийн эрэмбэ гэнэ.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="fu">acf</span>(noise<span class="sc">@</span>left, <span class="at">lag.max =</span> <span class="dv">50</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div id="fig-acf" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-acf-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="Signal-Processing_files/figure-html/fig-acf-1.png" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-acf-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Зураг&nbsp;5: Шуугианы автокорреляц
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Диаграмм дээрх бүх <span class="math inline">\(k\geq1\)</span> бүх эрэбийн автокорреляцийн коэффициентын утга хамааралгүйн босгыг давжээ.</p>
+<p><span class="math inline">\(N_i\)</span> ба <span class="math inline">\(N_{i-k}\)</span> хоёрын хамаарлыг хэмжихдээ түүврийн бусад элементүүдийн нөлөөг зайлуулбал энэ нь тухайн автокорреляц болно.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb31"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="fu">pacf</span>(noise<span class="sc">@</span>left, <span class="at">lag.max =</span> <span class="dv">25</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div id="fig-pacf" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-pacf-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="Signal-Processing_files/figure-html/fig-pacf-1.png" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-pacf-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Зураг&nbsp;6: Шуугианы тухайн автокорреляц
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Бусад элементүүдийн нөлөөг зайлуулсан үед түүврийн элементийн нөлөө төдий хол үргэлжлэхгүй байгаа нь тухайн автокорреляцийн диаграммаас харагдана.</p>
+<p>Автокорреляцийн коэффициент “өндөр” утгатай байгаа нь түүврийн элементүүд хоорондоо хүчтэй хамааралтай буюу процесс ихээхэн ой санамжтай болохыг илтгэнэ. Иймээс автокорреляц тэгтэй тэнцүү буюу процессыг ой санамжгүй гэсэн таамаглал няцаагдах нь тодорхой юм.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="fu">Box.test</span>(noise<span class="sc">@</span>left, <span class="at">lag =</span> <span class="dv">1</span>, <span class="at">type =</span> <span class="st">"Ljung-Box"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    Box-Ljung test
+
+data:  noise@left
+X-squared = 56538, df = 1, p-value &lt; 2.2e-16</code></pre>
+</div>
+</div>
+<p>p-value маш бага гарсан нь автокорреляц тэгтэй тэнцүү гэсэн таамаглал няцаагдаж буйг илтгэнэ.</p>
+</section>
+</section>
+<section id="шуугиан-болон-яриа-холилдсон-хэсгийг-эх-дохиотой-хугацааны-хувьд-тааруулах" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Шуугиан болон яриа холилдсон хэсгийг эх дохиотой хугацааны хувьд тааруулах</h1>
+<p>Эх дохиог авч үзэх тул <code>original.wav</code> файлыг ачаална.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a>original <span class="ot">&lt;-</span> tuneR<span class="sc">::</span><span class="fu">readWave</span>(<span class="st">"original.wav"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>Ачаалсан өгөгдлийг агуулах объектыг <code>original</code> гэж нэрлэв.</p>
+<section id="sampling-rate-буюу-секунд-тутамд-авах-түүврийн-хэмжээг-ижил-болгох" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="sampling-rate-буюу-секунд-тутамд-авах-түүврийн-хэмжээг-ижил-болгох"><span class="header-section-number">4.1</span> Sampling rate буюу секунд тутамд авах түүврийн хэмжээг ижил болгох</h2>
+<p><code>original</code> ба <code>speech</code> хоёр дохиог хугацааны хувьд тааруулахдаа хоёр дохионы sampling rate ижил эсэхийг шалгах хэрэгтэй.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb35"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a>original<span class="sc">@</span>samp.rate <span class="sc">|&gt;</span> <span class="fu">cat</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>48000</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb37"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a>speech<span class="sc">@</span>samp.rate <span class="sc">|&gt;</span> <span class="fu">cat</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>44100</code></pre>
+</div>
+</div>
+<p>Энэ нь <code>original</code> дохионы хувьд 1 секунд тутамд 48000 удаа түүвэр авсаныг илтгэх бол <code>speech</code> дохионы хувьд ийм түүврийн хэмжээ 44100 байна. Иймд sampling rate буюу секунд тутамд авах түүврийн хэмжээг ижил болгоно. Ингэхдээ <code>original</code> дохионы sampling rate-ийг <code>speech</code> дохионых адил болгов.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb39"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a>original <span class="sc">|&gt;</span></span>
+<span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a>  seewave<span class="sc">::</span><span class="fu">resamp</span>(</span>
+<span id="cb39-3"><a href="#cb39-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">wave =</span> _,                 <span class="co"># original объектыг энэ аргумент руу дамжуулна</span></span>
+<span id="cb39-4"><a href="#cb39-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">f =</span> original<span class="sc">@</span>samp.rate,</span>
+<span id="cb39-5"><a href="#cb39-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">g =</span> speech<span class="sc">@</span>samp.rate,</span>
+<span id="cb39-6"><a href="#cb39-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">channel =</span> <span class="dv">1</span>,              <span class="co"># зүүн суваг</span></span>
+<span id="cb39-7"><a href="#cb39-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">output =</span> <span class="st">"Wave"</span>           <span class="co"># tuneR багцын формат</span></span>
+<span id="cb39-8"><a href="#cb39-8" aria-hidden="true" tabindex="-1"></a>  ) <span class="ot">-&gt;</span></span>
+<span id="cb39-9"><a href="#cb39-9" aria-hidden="true" tabindex="-1"></a>    original                  <span class="co"># хуучин өгөгдлийг дарж хадгална</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>Энд <code>tuneR::downsample()</code> функц алдаа өгөөд ажиллаагүй тул <code>seewave</code> багцын <code>resamp()</code> функц ашигласан.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb40"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a>original<span class="sc">@</span>samp.rate <span class="sc">|&gt;</span> <span class="fu">cat</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>44100</code></pre>
+</div>
+</div>
+<p>Энэ нь <code>original</code> дохионы sampling rate өөрчлөгдсөнийг илтгэнэ.</p>
+</section>
+<section id="хоёр-дохиог-хугацааны-хувьд-давхцуулах" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="хоёр-дохиог-хугацааны-хувьд-давхцуулах"><span class="header-section-number">4.2</span> Хоёр дохиог хугацааны хувьд давхцуулах</h2>
+<p>Оригинал дохионы урт 222153 нь <code>speech</code> хэсгийн 264601 уртаас их буюу <code>speech</code> дохио дотор <code>original</code> дохио бүтнээрээ багтсан. Иймд хоёр дохиог хугацааны хувьд бүрэн давхцуулах бололцоотой.</p>
+<p>Давхацлыг олоход корреляцийн коэффициент ашиглав. Хоёр дохионы давхацлыг олоход корреляцийн коэффициент ашигласан нь дараах шалтгаантай. Шуугианы улмаас <code>speech</code> дохио дотор <code>original</code> дохио яг хэвээрээ байхгүй болно. Бас амплитудын ялгаа ч гарна. Гэхдээ <code>speech</code> нь <code>original</code> дохиог тоглуулан бичиж авахад үүссэн тул <code>speech</code> дотор <code>original</code> дохиотой уялдаатай хэсэг агуулагдана. Чухам ийм уялдааг хэмжихэд ашиглаж болох нэг статистик бол түүврийн корреляцийн коэффициент юм. Улмаар хамгийн их корреляцтай буюу <code>original</code> дохиотой хамгийн сайн тохирох хэсгийг <code>speech</code> дохио дотроос олно. Ингээд тэрхүү хамгийн сайн тохирох хэсгээр хоёр дохиог давхцуулна.</p>
+<p>Түүврийн корреляцийн коэффициентыг ижил урттай хоёр түүврийн хувьд боддог тул давхцал аль хэсэгт тохиолдохыг дараах схемийн дагуу олно. <span class="math display">\[
+\begin{array}{c}
+\begin{matrix}
+&amp; &amp; &amp; X_1 &amp; \ldots &amp; X_n \\
+Y_1 &amp; \ldots &amp; Y_{k} &amp; Y_{k+1} &amp; \ldots &amp; Y_{k+n} &amp; Y_{k+n+1} &amp; \ldots &amp; Y_m
+\end{matrix}
+\\[1.5em]
+\operatorname*{arg\,max}\limits_{k}\;\operatorname{cor}(X_1,\ldots,X_n;\,Y_{k+1},\ldots,Y_{k+n})
+\end{array}
+\qquad k\in\{0,1,\ldots,m-n\}
+\]</span> Эндээс олдох <span class="math inline">\(k\)</span> аргументын утга нь хоёр түүврийн хамгийн өндөр корреляц <span class="math inline">\(Y\)</span> түүврийн чухам аль хэсэгт тохиолдохыг илтгэнэ. Дээрх бодлогыг бодож корреляцийг хамгийн их байлгах <span class="math inline">\(k\)</span> аргументын утгыг олох тооцоолол нүсэр болох тул гарсан үр дүнг файлд хадгалав. Ингэснээр Quarto document файлыг дахин рендерлэхэд зарцуулах хугацааг хэмнэнэ. Жич: <code>original</code> болон <code>speech</code> дохио өөрчлөгдсөн бол энэхүү корреляцийг ахин шинээр тооцоолно.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb42"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a>(\(){</span>
+<span id="cb42-2"><a href="#cb42-2" aria-hidden="true" tabindex="-1"></a>  n <span class="ot">&lt;-</span> <span class="fu">length</span>(original<span class="sc">@</span>left)</span>
+<span id="cb42-3"><a href="#cb42-3" aria-hidden="true" tabindex="-1"></a>  m <span class="ot">&lt;-</span> <span class="fu">length</span>(speech<span class="sc">@</span>left)</span>
+<span id="cb42-4"><a href="#cb42-4" aria-hidden="true" tabindex="-1"></a>  correlations <span class="ot">&lt;-</span> <span class="fu">vector</span>(<span class="at">mode =</span> <span class="st">"numeric"</span>, <span class="at">length =</span> m <span class="sc">-</span> n <span class="sc">+</span> <span class="dv">1</span>)</span>
+<span id="cb42-5"><a href="#cb42-5" aria-hidden="true" tabindex="-1"></a>  section <span class="ot">&lt;-</span> <span class="dv">1</span><span class="sc">:</span>n</span>
+<span id="cb42-6"><a href="#cb42-6" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (k <span class="cf">in</span> <span class="dv">0</span><span class="sc">:</span>{m <span class="sc">-</span> n}) {</span>
+<span id="cb42-7"><a href="#cb42-7" aria-hidden="true" tabindex="-1"></a>    correlations[k<span class="sc">+</span><span class="dv">1</span>] <span class="ot">&lt;-</span> <span class="fu">cor</span>(original<span class="sc">@</span>left, speech<span class="sc">@</span>left[k<span class="sc">+</span>section])</span>
+<span id="cb42-8"><a href="#cb42-8" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb42-9"><a href="#cb42-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">write</span>(correlations, <span class="st">"correlations.txt"</span>)</span>
+<span id="cb42-10"><a href="#cb42-10" aria-hidden="true" tabindex="-1"></a>})()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>Одоо <span class="math inline">\(\operatorname{cor}(X_1,\ldots,X_n;\,Y_{k+1},\ldots,Y_{k+n})\)</span> корреляцийг хамгийн их байлгах <span class="math inline">\(k\)</span> параметрийн утгыг өмнө тооцоолон гаргасан корреляцийн коэффициентуудаас олно.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb43"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a><span class="fu">scan</span>(<span class="st">"correlations.txt"</span>, <span class="at">quiet =</span> <span class="cn">TRUE</span>) <span class="ot">-&gt;</span></span>
+<span id="cb43-2"><a href="#cb43-2" aria-hidden="true" tabindex="-1"></a>  correlations</span>
+<span id="cb43-3"><a href="#cb43-3" aria-hidden="true" tabindex="-1"></a>{correlations <span class="sc">==</span> <span class="fu">max</span>(correlations)} <span class="sc">|&gt;</span></span>
+<span id="cb43-4"><a href="#cb43-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">which</span>() <span class="sc">|&gt;</span> (\(k){</span>
+<span id="cb43-5"><a href="#cb43-5" aria-hidden="true" tabindex="-1"></a>    k <span class="ot">&lt;-</span> k[<span class="dv">1</span>]     <span class="co"># олон утга байвал нэгийг нь авна.</span></span>
+<span id="cb43-6"><a href="#cb43-6" aria-hidden="true" tabindex="-1"></a>    k <span class="ot">&lt;-</span> k <span class="sc">-</span> <span class="dv">1</span>L   <span class="co"># R хэлд элементийн индекс 1-ээс эхэлдэг.</span></span>
+<span id="cb43-7"><a href="#cb43-7" aria-hidden="true" tabindex="-1"></a>  })() <span class="ot">-&gt;</span></span>
+<span id="cb43-8"><a href="#cb43-8" aria-hidden="true" tabindex="-1"></a>  k</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>Эндээс <span class="math inline">\(k=28791\)</span> гэж олдоно. Ингээд <code>speech</code> түүврийн <span class="math inline">\(k+1,\ldots,k+n\)</span> дугаартай элементүүдийг ялгаж аваад <code>speechCCF</code> гэж хадгалав.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb44"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a>speech[{k <span class="sc">+</span> <span class="dv">1</span>} <span class="sc">:</span> {k <span class="sc">+</span> <span class="fu">length</span>(original<span class="sc">@</span>left)}] <span class="ot">-&gt;</span></span>
+<span id="cb44-2"><a href="#cb44-2" aria-hidden="true" tabindex="-1"></a>  speechCCF</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>Үнэхээр корреляцийн коэффициентын утга хоёр дохио давхцаж ирэх үед өндөр утгатай болоод улмаар давхцал холдоход буцан буурч буйг дараах диаграммаас харж болно.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb45"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(correlations, <span class="at">type =</span> <span class="st">"l"</span>, <span class="at">xlab =</span> <span class="st">"k"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div id="fig-correlations" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-correlations-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="Signal-Processing_files/figure-html/fig-correlations-1.png" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-correlations-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Зураг&nbsp;7: <span class="math inline">\(k\)</span> параметрийн янз бүрийн утгатай харгалзах <span class="math inline">\(\operatorname{cor}(X_1,\ldots,X_n;\,Y_{k+1},\ldots,Y_{k+n})\)</span> корреляцийн коэффициентын утгууд
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Түүнчлэн корреляцийн хамгийн их утгыг <span class="math inline">\(k=0,1,\ldots,m-n\)</span> утга нэг бүрчлэн тооцоолж олохоос өөр аргагүй болох нь дараах диаграммаас харагдана. Тус диаграммаас корреляц нь олон локал максимумтайг харж болно.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb46"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a>correlations[k <span class="sc">+</span> <span class="sc">-</span><span class="dv">1000</span><span class="sc">:</span><span class="dv">1000</span>] <span class="sc">|&gt;</span></span>
+<span id="cb46-2"><a href="#cb46-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">plot</span>(</span>
+<span id="cb46-3"><a href="#cb46-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="sc">-</span><span class="dv">1000</span><span class="sc">:</span><span class="dv">1000</span>,</span>
+<span id="cb46-4"><a href="#cb46-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> _,</span>
+<span id="cb46-5"><a href="#cb46-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">type =</span> <span class="st">"l"</span>,</span>
+<span id="cb46-6"><a href="#cb46-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">xlab =</span> <span class="st">"k +- 1000"</span>, <span class="at">ylab =</span> <span class="st">"корреляц"</span></span>
+<span id="cb46-7"><a href="#cb46-7" aria-hidden="true" tabindex="-1"></a>  )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div id="fig-correlations_1000" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-correlations_1000-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="Signal-Processing_files/figure-html/fig-correlations_1000-1.png" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-correlations_1000-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Зураг&nbsp;8: <span class="math inline">\(k=`r k`\pm1000\)</span> тохиолдол дахь <span class="math inline">\(\operatorname{cor}(X_1,\ldots,X_n;\,Y_{k+1},\ldots,Y_{k+n})\)</span> корреляцийн коэффициентын утгууд
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Эцэст нь хоёр дохионы давхацлыг waveform-оор харьцуулсан диаграмм байгуулав.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb47"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a>tuneR<span class="sc">::</span><span class="fu">plot</span>(speechCCF)</span>
+<span id="cb47-2"><a href="#cb47-2" aria-hidden="true" tabindex="-1"></a>tuneR<span class="sc">::</span><span class="fu">plot</span>(original)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div id="fig-two_waveforms" class="quarto-layout-panel">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-two_waveforms-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-layout-row">
+<div class="cell-output-display quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-two_waveforms" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div id="fig-two_waveforms-1" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-two_waveforms-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="Signal-Processing_files/figure-html/fig-two_waveforms-1.png" class="img-fluid figure-img" data-ref-parent="fig-two_waveforms" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-two_waveforms-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(a) speechCCF
+</figcaption>
+</figure>
+</div>
+</div>
+<div class="cell-output-display quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-two_waveforms" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div id="fig-two_waveforms-2" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-two_waveforms-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="Signal-Processing_files/figure-html/fig-two_waveforms-2.png" class="img-fluid figure-img" data-ref-parent="fig-two_waveforms" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-two_waveforms-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(b) original
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-two_waveforms-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Зураг&nbsp;9: Хоёр дохионы харьцуулалт
+</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="дохио-ба-шуугианы-чадлын-харьцааг-олох" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Дохио ба шуугианы чадлын харьцааг олох</h1>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb48"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a>SNR <span class="ot">&lt;-</span> <span class="dv">10</span> <span class="sc">*</span> <span class="fu">log10</span>(<span class="fu">mean</span>(speechCCF<span class="sc">@</span>left<span class="sc">^</span><span class="dv">2</span>) <span class="sc">/</span> <span class="fu">mean</span>(noise<span class="sc">@</span>left<span class="sc">^</span><span class="dv">2</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p><span class="math inline">\(\text{SNR}\approx14.2454824\)</span> гэж олдов. Энэ нь <code>speechCCF</code> дохионы чанар муу болохыг илтгэнэ <span class="citation" data-cites="sponcomm_what_is_snr_2025"><a href="#ref-sponcomm_what_is_snr_2025" role="doc-biblioref">[4]</a></span>. Иймд <code>speechCCF</code> дохио дахь шуугианыг шүүж цэвэрлэн дохионы чанарыг сайжруулах хэрэгтэй.</p>
+</section>
+<section id="шуугианы-давтамжийн-домэйн-дээрх-шинжилгээ-ба-филтер-сонголт" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> Шуугианы давтамжийн домэйн дээрх шинжилгээ ба филтер сонголт</h1>
+<p>Шуугиан ямар давтамж дээр төвлөрч байгаа олохын тулд үүнийг хугацааны домэйн дээр буюу <span class="math inline">\(N(t)\)</span> байдлаар бус харин давтамжийн домэйн дээр авч үзэх хэрэгтэй.</p>
+<p>Дохиог давтамжийн домэйнд шилжүүлэхэд Фурьегийн хувиргалт ашигладаг. Ийнхүү шуугианы хувьд сигналын спектрийн чадал буюу power spectral density (PSD) хэмжигдэхүүнийг дараах томьёогоор тооцоолно. <span class="math display">\[\text{PSD}=|\text{FFT}(N)|^2\]</span> Энд <span class="math inline">\(\text{FFT}(\cdot)\)</span> нь Фурьегийн хурдан хувиргалт, <span class="math inline">\(|\cdot|\)</span> нь дохионы магнитуд буюу комплекс тооны модулыг тус тус илэрхийлнэ. Улмаар квадрат зэрэгт дэвшүүлсэнээр дохионы чадал тодорхойлогдоно.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb49"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a>noise<span class="sc">@</span>left <span class="sc">|&gt;</span></span>
+<span id="cb49-2"><a href="#cb49-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">fft</span>() <span class="sc">|&gt;</span>          <span class="co"># Фурьегийн хувиргалт</span></span>
+<span id="cb49-3"><a href="#cb49-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">Mod</span>() <span class="sc">|&gt;</span>          <span class="co"># комплекс тооны модул</span></span>
+<span id="cb49-4"><a href="#cb49-4" aria-hidden="true" tabindex="-1"></a>  (\(x) x<span class="sc">^</span><span class="dv">2</span>)() <span class="ot">-&gt;</span>   <span class="co"># квадрат зэрэг (дохионы чадал)</span></span>
+<span id="cb49-5"><a href="#cb49-5" aria-hidden="true" tabindex="-1"></a>    PSD             <span class="co"># power spectral density</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>Чадлын нягтыг олсон тул одоо дохионы давтамжийн чадлын нягтыг харуулсан периодограмм (periodogram) <span class="citation" data-cites="psu_stat510_lesson06"><a href="#ref-psu_stat510_lesson06" role="doc-biblioref">[5]</a></span> байгуулна. Давтамжийг 0 Hz-ээс Найквистын давтамж (Nyquist frequency) <span class="math inline">\(f_s/2\)</span> хүртэл авна. Энд <span class="math inline">\(f_s\)</span> нь sample rate бөгөөд <code>noise</code> дохионы хувьд <span class="math inline">\(f_s=44100\)</span> байна.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb50"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a>n <span class="ot">&lt;-</span> <span class="fu">length</span>(noise<span class="sc">@</span>left)               <span class="co"># түүврийн хэмжээ буюу дохионы урт</span></span>
+<span id="cb50-2"><a href="#cb50-2" aria-hidden="true" tabindex="-1"></a>half <span class="ot">&lt;-</span> <span class="dv">1</span><span class="sc">:</span>{n <span class="sc">%/%</span> <span class="dv">2</span>}</span>
+<span id="cb50-3"><a href="#cb50-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(</span>
+<span id="cb50-4"><a href="#cb50-4" aria-hidden="true" tabindex="-1"></a>  {half <span class="sc">-</span> <span class="dv">1</span>} <span class="sc">*</span> {noise<span class="sc">@</span>samp.rate <span class="sc">/</span> n}, <span class="co"># давтамж (Hz)</span></span>
+<span id="cb50-5"><a href="#cb50-5" aria-hidden="true" tabindex="-1"></a>  PSD[half],                          <span class="co"># чадлын нягт</span></span>
+<span id="cb50-6"><a href="#cb50-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">type =</span> <span class="st">"l"</span>,</span>
+<span id="cb50-7"><a href="#cb50-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">xlab =</span> <span class="st">"Давтамж (Hz)"</span>,</span>
+<span id="cb50-8"><a href="#cb50-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">ylab =</span> <span class="st">"Чадлын нягт"</span>,</span>
+<span id="cb50-9"><a href="#cb50-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">main =</span> <span class="st">"Шуугианы периодограмм"</span></span>
+<span id="cb50-10"><a href="#cb50-10" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div id="fig-periodogram_noise" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-periodogram_noise-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="Signal-Processing_files/figure-html/fig-periodogram_noise-1.png" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-periodogram_noise-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Зураг&nbsp;10: Шуугианы периодограмм
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="филтер-сонгож-ажиллуулах-ба-шүүсэн-дохиог-шинжлэх" class="level1" data-number="7">
+<h1 data-number="7"><span class="header-section-number">7</span> Филтер сонгож ажиллуулах ба шүүсэн дохиог шинжлэх</h1>
+<p><a href="#fig-periodogram_noise" class="quarto-xref">Зураг&nbsp;10</a> периодограммаас шуугиан бага давтамж дээр төвлөрч буй нь харагдана. Иймд бага давтамжийг шүүж, өндөр давтамжийг нэвтрүүлдэг фильтер ашиглаж <code>speechCCF</code> дохионы шуугианыг шүүнэ. Гэхдээ ямар давтамжаас дээш үлдээхийг нарийвчлан тогтоохын тулд периодограммыг бага давтамжтай мужид ахин байгуулав.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb51"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb51-1"><a href="#cb51-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(</span>
+<span id="cb51-2"><a href="#cb51-2" aria-hidden="true" tabindex="-1"></a>  {half[<span class="dv">1</span><span class="sc">:</span><span class="dv">2940</span>] <span class="sc">-</span> <span class="dv">1</span>} <span class="sc">*</span> {noise<span class="sc">@</span>samp.rate <span class="sc">/</span> n}, <span class="co"># давтамж (Hz)</span></span>
+<span id="cb51-3"><a href="#cb51-3" aria-hidden="true" tabindex="-1"></a>  PSD[half[<span class="dv">1</span><span class="sc">:</span><span class="dv">2940</span>]],                          <span class="co"># чадлын нягт</span></span>
+<span id="cb51-4"><a href="#cb51-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">type =</span> <span class="st">"l"</span>,</span>
+<span id="cb51-5"><a href="#cb51-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">xlab =</span> <span class="st">"Давтамж (Hz)"</span>,</span>
+<span id="cb51-6"><a href="#cb51-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">ylab =</span> <span class="st">"Чадлын нягт"</span>,</span>
+<span id="cb51-7"><a href="#cb51-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">main =</span> <span class="st">"Шуугианы периодограмм"</span></span>
+<span id="cb51-8"><a href="#cb51-8" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div id="fig-periodogram_noise_600" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-periodogram_noise_600-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="Signal-Processing_files/figure-html/fig-periodogram_noise_600-1.png" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-periodogram_noise_600-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Зураг&nbsp;11: Шуугианы периодограмм, бага давтамжтай муж
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Шуугианы хамгийн их төвлөрөл 50 Hz орчимд байна. Ерөнхийдөө өндөр чадалтай давтамж 400 Hz орчим хүртэл ажиглагдаж байна. Бас хүний ярианд байхгүй 4000 Hz-ээс өндөр давтамжийг арилгана. Ийнхүү давтамжийн зурвасыг л нэвтрүүлдэг Band-Pass фильтер ашиглав.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb52"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a>speechCCF <span class="sc">|&gt;</span></span>
+<span id="cb52-2"><a href="#cb52-2" aria-hidden="true" tabindex="-1"></a>  seewave<span class="sc">::</span><span class="fu">ffilter</span>(<span class="at">from =</span> <span class="dv">400</span>, <span class="at">to =</span> <span class="dv">4000</span>, <span class="at">bandpass =</span> <span class="cn">TRUE</span>, <span class="at">output =</span> <span class="st">"Wave"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb52-3"><a href="#cb52-3" aria-hidden="true" tabindex="-1"></a>  tuneR<span class="sc">::</span><span class="fu">normalize</span>(<span class="at">unit =</span> <span class="st">"16"</span>, <span class="at">pcm =</span> <span class="cn">TRUE</span>) <span class="ot">-&gt;</span></span>
+<span id="cb52-4"><a href="#cb52-4" aria-hidden="true" tabindex="-1"></a>  speechBandPass</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p><code>seewave::ffilter()</code> функц нь Фурьегийн хувиргалтын цонхны параметрийн утгаас шалтгаалан буцаах дохионы урт анх өгсөн дохионыхоос ялгаатай байж болно. Иймд <code>speechBandPass</code> дохиог <code>speechCCF</code> дохиотой ижил урттай болгоно. Энэ нь хоёр дохиог харьцуулахад учрах хүндрэлээс сэргийлнэ.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb53"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a>n <span class="ot">&lt;-</span> <span class="fu">length</span>(speechCCF)</span>
+<span id="cb53-2"><a href="#cb53-2" aria-hidden="true" tabindex="-1"></a>m <span class="ot">&lt;-</span> <span class="fu">length</span>(speechBandPass)</span>
+<span id="cb53-3"><a href="#cb53-3" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (m <span class="sc">&gt;</span> n) {</span>
+<span id="cb53-4"><a href="#cb53-4" aria-hidden="true" tabindex="-1"></a>  speechBandPass[<span class="dv">1</span><span class="sc">:</span>n,] <span class="ot">-&gt;</span></span>
+<span id="cb53-5"><a href="#cb53-5" aria-hidden="true" tabindex="-1"></a>    speechBandPass</span>
+<span id="cb53-6"><a href="#cb53-6" aria-hidden="true" tabindex="-1"></a>} <span class="cf">else</span> {</span>
+<span id="cb53-7"><a href="#cb53-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">c</span>(</span>
+<span id="cb53-8"><a href="#cb53-8" aria-hidden="true" tabindex="-1"></a>    speechBandPass<span class="sc">@</span>left,</span>
+<span id="cb53-9"><a href="#cb53-9" aria-hidden="true" tabindex="-1"></a>    <span class="fu">rep</span>(<span class="dv">0</span>L, n <span class="sc">-</span> m)</span>
+<span id="cb53-10"><a href="#cb53-10" aria-hidden="true" tabindex="-1"></a>  ) <span class="ot">-&gt;</span></span>
+<span id="cb53-11"><a href="#cb53-11" aria-hidden="true" tabindex="-1"></a>    speechBandPass<span class="sc">@</span>left</span>
+<span id="cb53-12"><a href="#cb53-12" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>Эцэст нь <code>speechBandPass</code> дохиог <code>speechBandPass.wav</code> файлд хадгалав.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb54"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a>speechBandPass <span class="sc">|&gt;</span></span>
+<span id="cb54-2"><a href="#cb54-2" aria-hidden="true" tabindex="-1"></a>  tuneR<span class="sc">::</span><span class="fu">writeWave</span>(<span class="at">filename =</span> <span class="st">"speechBandPass.wav"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<section id="шүүсэн-ба-шүүгээгүй-дохиог-харьцуулах" class="level2" data-number="7.1">
+<h2 data-number="7.1" class="anchored" data-anchor-id="шүүсэн-ба-шүүгээгүй-дохиог-харьцуулах"><span class="header-section-number">7.1</span> Шүүсэн ба шүүгээгүй дохиог харьцуулах</h2>
+<p>Шүүсэн ба шүүгээгүй хоёр дохионы ялгааг харьцуулах зорилгоор тэдгээрийн периодограммыг байгуулав.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb55"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb55-1"><a href="#cb55-1" aria-hidden="true" tabindex="-1"></a>speechBandPass <span class="sc">|&gt;</span> tuneR<span class="sc">::</span><span class="fu">periodogram</span>(<span class="at">width =</span> <span class="dv">1024</span>) <span class="sc">|&gt;</span> tuneR<span class="sc">::</span><span class="fu">plot</span>()</span>
+<span id="cb55-2"><a href="#cb55-2" aria-hidden="true" tabindex="-1"></a>speechCCF <span class="sc">|&gt;</span> tuneR<span class="sc">::</span><span class="fu">periodogram</span>(<span class="at">width =</span> <span class="dv">1024</span>) <span class="sc">|&gt;</span> tuneR<span class="sc">::</span><span class="fu">plot</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div id="fig-two_periodograms" class="quarto-layout-panel">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-two_periodograms-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-layout-row">
+<div class="cell-output-display quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-two_periodograms" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div id="fig-two_periodograms-1" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-two_periodograms-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="Signal-Processing_files/figure-html/fig-two_periodograms-1.png" class="img-fluid figure-img" data-ref-parent="fig-two_periodograms" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-two_periodograms-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(a) speechBandPass
+</figcaption>
+</figure>
+</div>
+</div>
+<div class="cell-output-display quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-two_periodograms" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div id="fig-two_periodograms-2" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-two_periodograms-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="Signal-Processing_files/figure-html/fig-two_periodograms-2.png" class="img-fluid figure-img" data-ref-parent="fig-two_periodograms" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-two_periodograms-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(b) speechCCF
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-two_periodograms-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Зураг&nbsp;12: Шүүсэн ба шүүгээгүй дохионы периодограмм
+</figcaption>
+</figure>
+</div>
+<p><a href="#fig-two_periodograms" class="quarto-xref">Зураг&nbsp;12</a> дээрх хоёр периодограммаас дохиог шүүсний дараа нам болон өндөр давтамж бүрэн шүүгдэж арилсан нь харагдана.</p>
+<p>Мөн шүүсэн ба шүүгээгүй дохио тус бүрийн хувьд автокорреляцуудыг олж харьцуулав.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb56"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb56-1"><a href="#cb56-1" aria-hidden="true" tabindex="-1"></a><span class="fu">acf</span>(speechBandPass<span class="sc">@</span>left, <span class="at">lag.max =</span> <span class="dv">50</span>)</span>
+<span id="cb56-2"><a href="#cb56-2" aria-hidden="true" tabindex="-1"></a><span class="fu">acf</span>(speechCCF<span class="sc">@</span>left, <span class="at">lag.max =</span> <span class="dv">50</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div id="fig-two_acf" class="quarto-layout-panel">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-two_acf-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-layout-row">
+<div class="cell-output-display quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-two_acf" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div id="fig-two_acf-1" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-two_acf-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="Signal-Processing_files/figure-html/fig-two_acf-1.png" class="img-fluid figure-img" data-ref-parent="fig-two_acf" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-two_acf-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(a) speechBandPass
+</figcaption>
+</figure>
+</div>
+</div>
+<div class="cell-output-display quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-two_acf" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div id="fig-two_acf-2" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-two_acf-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="Signal-Processing_files/figure-html/fig-two_acf-2.png" class="img-fluid figure-img" data-ref-parent="fig-two_acf" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-two_acf-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(b) speechCCF
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-two_acf-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Зураг&nbsp;13: Шүүсэн ба шүүгээгүй дохионы автокорреляц
+</figcaption>
+</figure>
+</div>
+<p><a href="#fig-two_acf" class="quarto-xref">Зураг&nbsp;13</a> дээрх шүүсэн ба шүүгээгүй дохионы автокорреляцийн диаграммаас дохиог шүүсний дараа автокорреляц өссөн бөгөөд хоцролтын дагуух автокорреляцийн өөрчлөлт “зөөлөн” болсон бол шүүгээгүй үед тус өөрчлөлт огцом “ширүүн” байна.</p>
+<p>Эцэст нь шүүгдэж үлдсэн дохио буюу <span class="math display">\[\text{residual\_noise} = \text{speechCCF} - \text{speechButterworthOrder1}\]</span> үлдэгдэл шуугианы автокорреляц тэгтэй тэнцүү гэсэн тэг таамаглалыг <span class="math inline">\(\alpha=0.05\)</span> ач холбогдлын түвшинд шалгав.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb57"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb57-1"><a href="#cb57-1" aria-hidden="true" tabindex="-1"></a><span class="fu">Box.test</span>(speechCCF<span class="sc">@</span>left <span class="sc">-</span> speechBandPass<span class="sc">@</span>left, <span class="at">lag =</span> <span class="dv">1</span>, <span class="at">type =</span> <span class="st">"Ljung-Box"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    Box-Ljung test
+
+data:  speechCCF@left - speechBandPass@left
+X-squared = 85351, df = 1, p-value &lt; 2.2e-16</code></pre>
+</div>
+</div>
+<p>Шинжүүрийн p-value маш бага гарсан нь үлдэгдэл шуугиан автокорреляцтай болохыг илтгэнэ.</p>
+</section>
+<section id="шүүсэн-дохиог-эх-дохиотой-харьцуулах" class="level2" data-number="7.2">
+<h2 data-number="7.2" class="anchored" data-anchor-id="шүүсэн-дохиог-эх-дохиотой-харьцуулах"><span class="header-section-number">7.2</span> Шүүсэн дохиог эх дохиотой харьцуулах</h2>
+<p>Одоо <code>speechBandPass</code> дохиог эх дохиотой харьцуулна. Хоёр дохио цаг хугацааны хувьд тохирох тул одоо эдгээрийг харьцуулахдаа зөвхөн амплитудын ялгааг л тооцно. Ийнхүү <span class="math display">\[\{\text{speechBandPass}\}=\text{gain}\cdot\{\text{original}\}+\{\text{residual}\}\]</span> загварыг ажиллуулан улмаар үлдэгдлийн стандарт дундаж квадрат алдааг олно.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb59"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb59-1"><a href="#cb59-1" aria-hidden="true" tabindex="-1"></a>model <span class="ot">&lt;-</span> <span class="fu">lm</span>(speechBandPass<span class="sc">@</span>left <span class="sc">~</span> original<span class="sc">@</span>left <span class="sc">-</span> <span class="dv">1</span>)</span>
+<span id="cb59-2"><a href="#cb59-2" aria-hidden="true" tabindex="-1"></a><span class="fu">residuals</span>(model)<span class="sc">^</span><span class="dv">2</span> <span class="sc">|&gt;</span> <span class="fu">mean</span>() <span class="sc">|&gt;</span> <span class="fu">sqrt</span>() <span class="sc">|&gt;</span> <span class="fu">cat</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>2757.193</code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="дүгнэлт" class="level1 unnumbered">
+<h1 class="unnumbered">Дүгнэлт</h1>
+<ol type="1">
+<li>Шуугианд онцгой утга цөөнгүй агуулагдаж байна.</li>
+<li>Шуугиан нь хэвийн тархалттай.</li>
+<li>Шуугианы дундаж тэгтэй тэнцүү.</li>
+<li>Шуугианы автокорреляц тэгээс ялгаатай.</li>
+<li>Дохиог шуугианаас шүүж цэвэрлэсний дараа түүврийн автокорреляц өссөн бөгөөд хоцролтын дагуух автокорреляцийн өөрчлөлт алгуур зөөлөн болж байна.</li>
+</ol>
+</section>
+<section id="ашигласан-материал" class="level1 unnumbered">
+<h1 class="unnumbered">Ашигласан материал</h1>
+<div id="refs" class="references csl-bib-body" data-entry-spacing="0" role="list">
+<div id="ref-R" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[1] </div><div class="csl-right-inline">R Core Team, <em>R: A language and environment for statistical computing</em>. Vienna, Austria: R Foundation for Statistical Computing, 2026. doi: <a href="https://doi.org/10.32614/R.manuals">10.32614/R.manuals</a>.</div>
+</div>
+<div id="ref-reintech2023" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[2] </div><div class="csl-right-inline">A. C. Codex, <span>“Speech and audio processing with r.”</span> Accessed: Nov. 13, 2026. [Online]. Available: <a href="https://reintech.io/blog/speech-and-audio-processing-with-r">https://reintech.io/blog/speech-and-audio-processing-with-r</a></div>
+</div>
+<div id="ref-audacity" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[3] </div><div class="csl-right-inline">Audacity Team, <span>“<span class="nocase">Audacity(R): Free Audio Editor and Recorder [Computer software]</span>.”</span> <a href="https://www.audacityteam.org/" class="uri">https://www.audacityteam.org/</a>, 2026.</div>
+</div>
+<div id="ref-sponcomm_what_is_snr_2025" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[4] </div><div class="csl-right-inline">Cora and SPON Communications Co., Ltd., <span>“<span class="nocase">What Is SNR in Audio? Signal-to-Noise Ratio Explained</span>.”</span> <a href="https://sponcomm.com/info-detail/what-is-snr" class="uri">https://sponcomm.com/info-detail/what-is-snr</a>, Oct. 2025.</div>
+</div>
+<div id="ref-psu_stat510_lesson06" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[5] </div><div class="csl-right-inline">Department of Statistics, The Pennsylvania State University, <span>“<span>STAT 510: Applied Time Series Analysis — Lesson 6: The Periodogram</span>.”</span> <a href="https://online.stat.psu.edu/stat510/Lesson06" class="uri">https://online.stat.psu.edu/stat510/Lesson06</a>, 2026.</div>
+</div>
+</div>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+      window.quartoDecorateExternalLinks = function (root) {
+     var links = (root || window.document).querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+          if (!link.classList.contains('no-external-icon')) {
+          }
+        }
+      }
+      };
+      window.quartoDecorateExternalLinks(window.document);
+    // Esc closes the popup (WCAG 1.4.13) and focus leaving both trigger and
+    // popup closes it (WCAG 2.4.11); tippy handles neither for interactive popups.
+    const hideOnEscAndFocusOut = {
+      name: 'hideOnEscAndFocusOut',
+      defaultValue: true,
+      fn(instance) {
+        const dismiss = () => {
+          // A show scheduled by the trigger delay would otherwise reopen it
+          instance.clearDelayTimeouts();
+          instance.hide();
+        };
+        const onKeyDown = (event) => {
+          if (event.key !== 'Escape') {
+            return;
+          }
+          // Keep Esc from also reaching page handlers (e.g. reveal.js overview),
+          // except an open reveal.js slide menu, which Esc should close too.
+          // The menu handles keys only when its keyboard option is on.
+          const menuHandlesEsc = window.Reveal?.getPlugin?.('menu')?.isOpen() &&
+            window.Reveal.getConfig().menu?.keyboard !== false;
+          if (!menuHandlesEsc) {
+            event.stopPropagation();
+          }
+          if (instance.popper.contains(window.document.activeElement)) {
+            // Disabled while refocusing so the focus trigger does not reopen it
+            instance.disable();
+            instance.reference.focus();
+            instance.enable();
+          }
+          dismiss();
+        };
+        const onFocusOut = (event) => {
+          const target = event.relatedTarget;
+          if (target && !instance.reference.contains(target) &&
+              !instance.popper.contains(target)) {
+            dismiss();
+          }
+        };
+        // On the trigger too: a click trigger (code-annotations: select) has no
+        // blur handling. Attached for the instance's lifetime so leaving the
+        // trigger also cancels a show still pending on the trigger delay.
+        instance.reference.addEventListener('focusout', onFocusOut);
+        return {
+          onShow() {
+            window.document.addEventListener('keydown', onKeyDown, true);
+            instance.popper.addEventListener('focusout', onFocusOut);
+          },
+          onHide() {
+            window.document.removeEventListener('keydown', onKeyDown, true);
+            instance.popper.removeEventListener('focusout', onFocusOut);
+          },
+          onDestroy() {
+            instance.reference.removeEventListener('focusout', onFocusOut);
+          },
+        };
+      },
+    };
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+        plugins: [hideOnEscAndFocusOut],
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          // Each band is positioned against its own containing block, which is
+          // not the offsetParent of the lines, so place it from client rects.
+          const placeBand = (band, firstEl, lastEl, codeBlock) => {
+            const container = band.offsetParent;
+            if (container === null) {
+              return;
+            }
+            const containerRect = container.getBoundingClientRect();
+            // Reveal.js scales slides with a transform, so convert client
+            // pixels back to the CSS pixels of the container.
+            const scale = containerRect.height / container.offsetHeight || 1;
+            const firstRect = firstEl.getBoundingClientRect();
+            const lastRect = lastEl.getBoundingClientRect();
+            const top = (firstRect.top - containerRect.top) / scale - container.clientTop + container.scrollTop;
+            const height = (lastRect.bottom - firstRect.top) / scale;
+            band.style.top = top - 2 + "px";
+            band.style.height = height + 4 + "px";
+            if (codeBlock) {
+              // Without the copy button wrapper, the containing block is wider
+              // than the code block, so span the code block explicitly.
+              const blockRect = codeBlock.getBoundingClientRect();
+              band.style.left = (blockRect.left - containerRect.left) / scale - container.clientLeft + container.scrollLeft + "px";
+              band.style.width = blockRect.width / scale + "px";
+            }
+          };
+          if (lineIds.length > 0) {
+            const el = window.document.getElementById(lineIds[0]);
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const parent = el.parentElement.parentElement;
+            // cook up a div (if necessary) and position it
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            placeBand(div, el, lastEl, parent.closest("div.sourceCode") || parent);
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            placeBand(gutterDiv, el, lastEl);
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+  <script type="application/javascript">
+  window.quartoScrollableRegionsLabels = {"code":"Scrollable code","output":"Scrollable output"};
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
